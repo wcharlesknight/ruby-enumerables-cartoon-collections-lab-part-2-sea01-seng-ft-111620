@@ -1,3 +1,5 @@
+require 'pry'
+
 def square_array(array)
   array.map do |element|
     element * element
@@ -17,9 +19,14 @@ def long_planeteer_calls(planeteer_calls)
   end
 end
 
+small_calls = ["earth", "wind", "fire", "water", "heart"]
+
+
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.find do |e|
     valid_calls.include?(e)
   end  
 end
+
+find_valid_calls(small_calls)
