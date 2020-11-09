@@ -27,6 +27,6 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.find do |e|
     valid_calls.include?(e)
   end
-binding.pry 
+  binding.pry 
 end
 
